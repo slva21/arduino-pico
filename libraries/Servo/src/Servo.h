@@ -49,11 +49,11 @@
 // of publicly available specifications. While this implies that many 180°
 // servos do not operate the full 0° to 180° sweep using these, it also prevents
 // unsuspecting damage. For Arduino AVR, the same change is being discussed.
-#define DEFAULT_MIN_PULSE_WIDTH      1000 // uncalibrated default, the shortest duty cycle sent to a servo
-#define DEFAULT_MAX_PULSE_WIDTH      2000 // uncalibrated default, the longest duty cycle sent to a servo 
-#define DEFAULT_NEUTRAL_PULSE_WIDTH  1500 // default duty cycle when servo is attached
-#define REFRESH_INTERVAL            20000 // classic default period to refresh servos in microseconds 
-#define MAX_SERVOS                      8 // number of PIO state machines available, assuming nobody else is using them
+#define DEFAULT_MIN_PULSE_WIDTH      42 // uncalibrated default, the shortest duty cycle sent to a servo
+#define DEFAULT_MAX_PULSE_WIDTH      84 // uncalibrated default, the longest duty cycle sent to a servo 
+#define DEFAULT_NEUTRAL_PULSE_WIDTH  63 // default duty cycle when servo is attached
+#define REFRESH_INTERVAL            100 // classic default period to refresh servos in microseconds 
+#define MAX_SERVOS                    8 // number of PIO state machines available, assuming nobody else is using them
 
 
 class Servo {
